@@ -1,25 +1,25 @@
 class SecretpassCli < Formula
   desc "Secretpass cli allows you to manage secrets locally secured through passkeys for human access and generated private keys for machine access"
   homepage "https://secretpass.cloud"
-  version "0.1.2"
+  version "0.1.16"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/secretpass/core/releases/download/0.1.2/secretpass-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "08e8be9aaacecfac6fb7cf797a90964a205ae39747475be61755c5e5e13eb9f6"
+      url "https://github.com/secretpass/cli/releases/download/0.1.16/secretpass-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "eec7e508dd87ce0e3bbb322965238643328051ab318dcf093f6acb46ce05ba19"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/secretpass/core/releases/download/0.1.2/secretpass-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "3b3f0b94beebd35bfda8e78fb2662b9a70167653e944b9710c523f5f3a4687b5"
+      url "https://github.com/secretpass/cli/releases/download/0.1.16/secretpass-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "063b4bf39c86ece7088ec686a19da9ec9dafd8a1a016e4fa2f1d215fab908503"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/secretpass/core/releases/download/0.1.2/secretpass-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "5e133270e74cba7e9ff3b0ce5cf1143a19b100db6146b6e91f10d2a7d5ab0ad7"
+      url "https://github.com/secretpass/cli/releases/download/0.1.16/secretpass-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "a7c7410bd3c932cc53bf2b6dc7d8a0e3ee8b5d0d32adc66f90dc4619d3b232f4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/secretpass/core/releases/download/0.1.2/secretpass-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e31ed4523d21171ed67faf5d64c481d308fb8b5c32b49fca3ff09f16318c0951"
+      url "https://github.com/secretpass/cli/releases/download/0.1.16/secretpass-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "04f219b4a0fcf5efbf6ec8fb503e50725999a259c0b3c56269985cc4495dbd33"
     end
   end
 
