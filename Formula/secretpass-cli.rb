@@ -1,25 +1,25 @@
 class SecretpassCli < Formula
   desc "Secretpass cli allows you to manage secrets locally secured through passkeys for human access and generated private keys for machine access"
   homepage "https://secretpass.cloud"
-  version "0.1.16"
+  version "0.2.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/secretpass/cli/releases/download/0.1.16/secretpass-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "eec7e508dd87ce0e3bbb322965238643328051ab318dcf093f6acb46ce05ba19"
+      url "https://github.com/secretpass/cli/releases/download/0.2.1/secretpass-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "9b22670f4cdaa9cf90607c0668b84aa3077b0853d20f9f0dee2173119f1c9041"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/secretpass/cli/releases/download/0.1.16/secretpass-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "063b4bf39c86ece7088ec686a19da9ec9dafd8a1a016e4fa2f1d215fab908503"
+      url "https://github.com/secretpass/cli/releases/download/0.2.1/secretpass-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "df1466e25ad7ebe0f159593f15a6e69181b3efea9fb20dcbf2a1538d65b526a0"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/secretpass/cli/releases/download/0.1.16/secretpass-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "a7c7410bd3c932cc53bf2b6dc7d8a0e3ee8b5d0d32adc66f90dc4619d3b232f4"
+      url "https://github.com/secretpass/cli/releases/download/0.2.1/secretpass-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "c0c54770ff0ac9e176f775425221b90c6cd0e8e221e6dab310b72fdbbacd3b78"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/secretpass/cli/releases/download/0.1.16/secretpass-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "04f219b4a0fcf5efbf6ec8fb503e50725999a259c0b3c56269985cc4495dbd33"
+      url "https://github.com/secretpass/cli/releases/download/0.2.1/secretpass-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "2a918f88202b8e44b9384b8933c62a6a69ddf5f2723873a1d14ecf1c8c39572f"
     end
   end
 
