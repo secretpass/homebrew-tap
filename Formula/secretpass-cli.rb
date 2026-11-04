@@ -5,21 +5,21 @@ class SecretpassCli < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/secretpass/cli/releases/download/0.2.3/secretpass-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "b30ce653b60a5e0b46f72f4a14c1caab94e0bfce277c8e7f4012787dbc8f974f"
+      sha256 "443167ff6c8c8c19b51127a07efe8ddfec8855145abf3162ca912484d57d09c8"
     end
     if Hardware::CPU.intel?
       url "https://github.com/secretpass/cli/releases/download/0.2.3/secretpass-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "4a9e3ddbfd1b440f94718f040d477bfbd831bdbbbb54795d699e58726f1946fb"
+      sha256 "8da7022869a1713e001f76f8dabf31aedd704a7b5a8eaceef4f8950d390e2990"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/secretpass/cli/releases/download/0.2.3/secretpass-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "416d00571b96980b15a4390afd5eff2aa0a4e33f880aa2d96b5e0e1ceb16ae68"
+      sha256 "997f223436081ca5ecfce4af6ae2a3e5c63c2422bb58e0aac84872e648526c01"
     end
     if Hardware::CPU.intel?
       url "https://github.com/secretpass/cli/releases/download/0.2.3/secretpass-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c342091636c6b0618f1304b88e2d0c4284ee831a7f518560467d929e4a1375ec"
+      sha256 "1f2effda42203f3a32a36e3da12dc78410d5bf8c84467221b22dbb62bd880933"
     end
   end
 
